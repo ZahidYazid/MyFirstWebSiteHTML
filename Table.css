@@ -1,0 +1,27 @@
+table {
+	width: 100%;
+	border: 2px solid lightblue;
+	text-align: center;
+}
+
+th {
+	height: 5%;
+	border-collapse: collapse;
+}
+#row1 {
+	font-weight: bold;
+	background-color: lightblue;
+
+}
+#row2 {
+	border-collapse: collapse;
+}
+
+img {
+	opacity:0.6;
+}
+
+img:hover {
+	opacity: 1.0;
+}
+

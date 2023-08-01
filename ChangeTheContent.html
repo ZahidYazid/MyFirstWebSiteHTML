@@ -1,0 +1,427 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Changing the contents</title>
+</head>
+<body>
+<h1 id="head_1">First line</h1>
+<script type="text/javascript">
+	document.getElementById('head_1').innerHTML = "Here is the headline";
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>String operations</title>
+
+</head>
+<body>
+	<h1 id='join'>Click the button to join "Brooklyn" and "College"</h1>
+	<button onclick="joinBC()">Click Here</button>
+	<script type="text/javascript">
+		function joinBC() {
+			b = "Brooklyn"; c = "College";
+			document.getElementById("join").innerHTML = b + " " + c;
+		}
+	</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String and its operations</title>
+</head>
+<body>
+	<h1 id="head_1">Hello Class</h1>
+	<script type="text/javascript">
+		var x = document.getElementById('head_1').innerHTML;
+		window.alert("The total length is " + x.length)
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String and its operations</title>
+</head>
+<body>
+	<h1 id="head_1">Hello Class, Welcome to CISC 3140!</h1>
+	<h1 id="len"></h1>
+	<h1 id="slice"></h1>
+	<h1 id="sub"></h1>
+	<script type="text/javascript">
+		var x = document.getElementById('head_1').innerHTML;
+		document.getElementById("len").innerHTML = "The total length is " + x;
+		var slice_str = x.slice(6, 11);
+		document.getElementById("slice").innerHTML = slice_str;
+		var sub_str = x.substr(6, 5);
+		document.getElementById("sub").innerHTML = sub_str;
+
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<h1>JavaScript Strings</h1>
+<h2>The replace() Method</h2>
+<p>Replace() searches a string for a value, and returns a new string with the specified value(s) repleced:</p>
+<p id="demo">Visit Microsoft!</p>
+<button onclick="rep()">Replace</button>
+<script type="text/javascript">
+	function rep() {
+		var txt = document.getElementById("demo").innerHTML;
+		document.getElementById("demo").innerHTML = txt.replace("Microsoft", "W3Schools");
+	}
+</script>
+<body>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+	<h1>JavaScript String</h1>
+	<h2>The toLowerCase() Method</h2>
+
+	<p>toLowerCase() converts a string to lowercase letters:</p>
+	<p id="demo">Hello World!</p>
+	<button onclick="cas()">lower case</button>
+	<script type="text/javascript">
+		function cas() {
+			var txt = document.getElementById("demo").innerHTML;
+			var result = txt.toLowerCase();
+			document.getElementById('demo').innerHTML = result;
+		}
+	</script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<p>The concat() method joins two or more strings.</p>
+<p>Join "Hello" and "World":</p>
+<p id="demo">Hello</p>
+<p id="demo1">World!</p>
+<button id="demo" >Concat</button>
+
+<script type="text/javascript">
+	var txt1 = document.getElementById("demo").innerHTML;
+	var txt2 =  document.getElementById("demo1").innerHTML;
+	ver result = txt1.concat(txt2);
+	 document.getElementById("demo").innerHTML = result;
+</script>
+<body>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+<h1>JavaScript Strings</h1>
+<h2>The charAt() Method</h2>
+<p>charAt() returns the character at a specified index (position) in a string.</p>
+<p>Get the first character in a string:</p>
+<p id="demo"></p>
+<button onclick="char()">Get Char</button>
+<script type="text/javascript">
+	function char() {
+	var tex = "Hello World!"
+	var lett = tex.charAt(7);
+	document.getElementById('demo').innerHTML = lett;
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+	<h1>JavaScript Numbers</h1>
+<h2>The toFixed() Method</h2>
+
+<p>toFixed() converts a number to a string, rounded to a specified number of decimals:</p>
+
+
+	<p id="demo"></p>
+	<script>
+		var num = 5.56789;
+		var n = num.toFixed();
+		document.getElementById("demo").innerHTML = n;
+	</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+	<p id='demo'></p>
+	<script type="text/javascript">
+		var num = 13.3384;
+		document.getElementById("demo").innerHTML = num.toPrecision(4);
+	</script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML = Number(true) + "<br>" + Number(false) + "<br>" + Number(new Date());
+	</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>	
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML = 
+		parseFloat(10) + "<br>" +
+		parseFloat("10") + "<br>" +
+		parseFloat("10.33") + "<br>" +
+		parseFloat("34 45 66") + "<br>" +
+		parseFloat("He was 40");
+	</script>
+
+</body>
+</html> -->
+
+
+<!--<!DOCTYPE html>
+<html>
+
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML = 
+		parseInt("10") + "<br>" +
+		parseInt("10.00") + "<br>" +
+		parseInt("10.33") + "<br>" +
+		parseInt("34 45 66") + "<br>" +
+		parseInt(" 60 ") + "<br>" +
+		parseInt("40 years") + "<br>" +
+		parseInt("He was 40");
+	</script>
+
+</body>
+</html> -->
+
+
+<!--<!DOCTYPE html>
+<html>
+
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		//var cars =[" saab", " Volvo", " BMW"];
+		var car = new Array("Honda", "Toyota", "Nissan");
+	//	document.getElementById("demo").innerHTML = cars;
+		document.getElementById("demo").innerHTML = car;
+	</script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		var leng = fruits.length;
+		document.getElementById("demo").innerHTML = leng;
+	</script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting method</title>
+	<script type="text/javascript">
+		function srt() {
+			var x= [12, 3, 59, 88, 104, 63, 68, 13, 79 , 23, 25, 102];
+			x.sort(function(a,b){return(a-b)});
+			document.getElementById('hp').innerHTML= x;
+		}
+	</script>
+</head>
+<body>
+	<h1 id="hp">Something appears here</h1>
+	<button onclick="srt()">Click to sort</button>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script type="text/javascript">
+			function gen() {
+				var x = parseInt(document.getElementById('num').value);
+				for (var i = 1; i <= 10; i++) {
+					document.write(x*i+"<br>");
+				}
+			}
+		</script>
+	
+</head>
+<body>
+	<input type = "text" name="num" id="num">
+	<button onclick="gen()">Why???</button>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Dates</title>
+	<script type="text/javascript">
+		function dte() {
+			var x = new Date();
+			var date_num = x.getDay();
+			var day = "";
+			if (date_num == 0) {
+				day="Sunday";
+			}
+			else if (date_num == 1) {
+				day="Monday";
+			}
+			else if (date_num == 2) {
+				day="Tuesday";
+			}
+			else if (date_num == 3) {
+				day="Wednesday";
+			}
+			else if (date_num == 4) {
+				day="Thursday";
+			}
+			else if (date_num == 5) {
+				day="Friday";
+			}
+			else if (date_num == 6) {
+				day="Saturday";
+			}
+			document.write(day);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function refresh() {
+			setTimeout("giveDate()", 1000);
+		}
+
+		function giveDate() {
+			var x = new Date();
+			document.getElementById('dt').innerHTML = x;
+			refresh();
+		}
+	</script>
+</head>
+<body>
+	<h1 id="dt">Live date appears here</h1>
+	<button onclick="giveDate()">Start the clock</button>
+
+</body>
+</html>
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function clck() {
+			var now = new Date().getTime();
+			var target = new Date("Aug 16 2023 18:00").getTime();
+			var diff = target - now;
+			var days = Math.floor(diff / (1000*60*60*24));
+			var hour = Math.floor((diff % (1000*60*60*24))/(1000*60*60));
+			var min = MAth.floor((diff % (1000*60*60))/(1000*60));
+			var sec = Math.floor((diff % (1000*60))/1000);
+			document.getElementById("dt").innerHTML = days + " days" + hour + " hours" + min + " minutes" + sec + " seconds";  setTimeout("clck()", 1000);
+
+		}
+	</script>
+</head>
+<body>
+	<h1 id ="dt">countdown begins</h1>
+	<button onclick="clck()">Begin!</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

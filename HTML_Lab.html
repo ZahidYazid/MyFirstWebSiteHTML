@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<a href="test.html">Hello class website</a><br>
 	<label><h1><center><u>A good food in here</h1></center></u></label>
-	<fieldset><br>
-		<img src="americanFood.webp" alt="American_food" style="width:200px; height: 200px;">
-		<img src="MexicanFood.jpeg" alt="Mexican_food" style="width:200px; height: 200px;">
-		<img src="MediterraneanFood.jpeg" alt="Mediterranean_food" style="width:200px; height: 200px;">
+	
+	<fieldset ><br>
 		<img src="americanFood.webp" alt="American_food" style="width:200px; height: 200px;">
 		<img src="MexicanFood.jpeg" alt="Mexican_food" style="width:200px; height: 200px;">
 		<img src="MediterraneanFood.jpeg" alt="Mediterranean_food" style="width:200px; height: 200px;">
 	</fieldset><br>
+	<link rel="stylesheet" type="text/css" href="Table.css">
 </head>
 
 <body>
-	<fieldset style="width:500px; height: 500px;">
+
+	<fieldset style="width:98%; height: 98%;">
 		<legend>Personalia:</legend>
 		<label for="text">Name:</label>
 		<input type="text" name="name"><br><br>
-		<label>Gender:</label><br>
+		<legend>Gender:</legend>
 		<label>Male</label>
-		<input type="radio" name="Male"><br>
+		<input type="radio" name="Male">
 		<label>Female</label>
 		<input type="radio" name="Female"><br><br>
 
@@ -41,14 +42,68 @@
 		<label>Tomato</label>
 		<input type="checkbox" name="l2" id="l2"><br>
 		<label>Onion</label>
-		<input type="checkbox" name="l3" id="l3"><br><br>
+		<input type="checkbox" name="l3" id="l3"><br>
 
 		<label for="address">Address:</label>
 		<textarea id="Address" name="adress" rows="5" cols="50"></textarea><br><br>
 
 		<label>Phone number:</label>
-		<input type="text" name="phone_number"><br><br>
-		<input type="Submit"><br><br>
-	</fieldset><br><br>
+		<input type="text" name="phone_number"><br><br><br>
+		<input type="Submit" style="width:75px; height:35px"><br><br>
+	</fieldset><br>
 
+<table border="1px">
+	<tr div id="row1">
+		<td>Personalia</td>
+		<td>Information</td>
+	</tr>
+	<tr>
+		<td>Name</td>
+		<td><input type="text"></td>
+	</tr>
+	<tr>
+		<td>Genre</td>
+		<td><input type="radio" name="Male">Male<input type="radio" name="Female">Female</td>
+	</tr>
+	<tr>
+		<td>Menu</td>
+		<td>
+			<div class="radio">
+				<label><input type="checkbox" name="menu"></label>Mexican food<label><input type="checkbox" name="menu">American Food<input type="checkbox" name="menu"></label>Mediterranean Food
+			</div>
+		</td>
+			
+	</tr>
+	<tr>
+		<td>Delivery date</td>
+		<td><input type="date" name="date"></td>
+	</tr>
+	<tr>
+		<td>Delivery time</td>
+		<td><input type="time" name="time"></td>
+	</tr>
+	<tr>
+		<td>Preference</td>
+		<td>
+			<div class="radio">
+				<label><input type="checkbox" name="menu"></label>Lettuce<label><input type="checkbox" name="menu">Tomato<input type="checkbox" name="menu"></label>Onion
+		    </div></td>
+	</tr>
+	<tr>
+		<td>Address</td>
+		<td><textarea id="Address" name="adress" rows="1" cols="100"></textarea></td>
+	</tr>
+	<tr>
+		<td>Phone number</td>
+		<td><input type="text" name="Phone"></td>
+	</tr>
+</table><br><br>
+
+<a href="test.html">Hello class website</a><br><br>
+
+<fieldset onclick="">
+	<button>
+		
+	</button>
+</fieldset>
 </body>
